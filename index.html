@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Smart Panel</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<main>
+    <body>
+    <input type="checkbox" hidden name="dark" id="dark" >
+        <div class="content">
+            <h1>DITM 2123</h1>
+            <h2>Web Programming</h2>
+            <p>Welcome, <span id="NAME"></span> Your result has been generated successfully.</p>
+
+            <nav>
+                <label for="dark">Dark Mode</label>
+                <button id="theme">Change Theme</button>
+                <button id="highlight">Highlight</button>
+                <label for="result">Show / Hide Result</label>
+                <button id="reset">Reset View</button>
+            </nav>
+            
+            <div class="changeColor">
+                <h4>Background Color:</h4>
+                <input type="color" name="color" id="color">
+            </div>
+
+            <div class="info">
+                <h3>Student Information</h1>
+                <div class="bahagi">
+                    <div>
+                        <p>Name: <span id="name"></span></p>
+                        <p>Matric number: <span id="matrikNumber"></span></p>
+                        <p>Course: <span id="course"></span></p>
+                    </div>
+                    <div class="img">
+                        <span>
+                            <div class="bulat">
+                                <p>X</p>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <input hidden type="checkbox" name="result" id="result">
+            <div class="result">
+                <h3>Assessment Result</h1>
+                <p>Quiz Mark: <span id="quiz">LOREM</span></p>
+                <p>Lab Mark: <span id="lab">123456</span></p>
+                <p>Assignment Mark: <span id="ass"></span></p>
+                <p>Total: <span id="total">LOREM</span></p>
+                <p>Average: <span id="avg">123456</span></p>
+                <p>Hight Mark: <span id="hight"></span></p>
+                <p>Grade: <span id="grade"></span></p>
+                <p>Status: <span id="status"></span></p>
+                <p>Feedback: <span id="feedbackk"></span> </p>
+            </div>
+        </div>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
