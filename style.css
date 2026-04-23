@@ -7,6 +7,7 @@ body{
 }
 main{
     background-color: #eeeeee;
+    min-height: 100vh;
     width: 100%;
     padding: 1rem 0;
     
@@ -80,16 +81,26 @@ main{
     border-radius: 14px;
 }
 
-#dark:checked ~ .content{
-    background-color: black;
+#dark:checked ~ main{
+    background-color: black !important;
     color: #fff;
+}
+#dark:checked~main > .content {
+    background-color: rgb(48, 48, 48);
+}
+#dark:checked~main>.content .info,
+#dark:checked~main>.content .result
+{
+    background-color: black !important;
+    border: 4px solid black;
 }
 
 
 .img{
     width: 100px;
     aspect-ratio:  1/ 1;
-    box-shadow: 3px 3px 3px 0 rgb(179, 179, 179);
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px 2px rgb(179, 179, 179);
 
 }
 .bulat{
